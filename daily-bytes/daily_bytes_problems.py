@@ -87,3 +87,24 @@ predict_vacuum_path('LR')
 predict_vacuum_path('RUULsLDRD')
 
 
+#### Problem 4: 12/16/25 ####
+    # Given a string, return whether or not it uses capitalization correctly.
+    # A string correctly uses capitalization if all letters are capitalized, no letters are capitalized, or only the first letter is capitalized.
+
+### Solution:
+def check_capitalization(s: str):
+    # If all letters after 1st are captial
+    if s[1:len(s)].islower(): # This accounts for String and string
+        return True
+    # If all letters are upper
+    elif s.isupper():
+        return True
+    else:
+        return False
+    
+# Test
+check_capitalization('USA')
+check_capitalization('Calvin')
+check_capitalization('compUter')
+check_capitalization('coding')
+
