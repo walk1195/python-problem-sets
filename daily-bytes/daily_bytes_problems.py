@@ -108,3 +108,29 @@ check_capitalization('Calvin')
 check_capitalization('compUter')
 check_capitalization('coding')
 
+#### Problem 5: 12/17/25 ####
+    # Given two binary strings (strings containing only 1s and 0s) return their sum (also as a binary string).
+    # Note: neither binary string will contain leading 0s unless the string itself is 0
+
+### Solution:
+s1 = "101"
+s2 = "1"
+def add_binary_string(s1: str, s2: str):
+    sum = int(s1,2) + int(s2,2)
+    bin_sim = str(bin(sum))[2:]
+
+    return bin_sim
+
+add_binary_string("100", "1") # Returns 101
+add_binary_string("11", "1") # Returns 100
+add_binary_string("1", "0") # Returns 1
+
+
+#### Problem 6: 12/18/25 ####
+    # Given an array of strings, return the longest common prefix that is shared amongst all strings.
+    # Note: you may assume all strings only contain lowercase alphabetical characters.
+
+### Solution:
+def find_common_prefix(list_of_strings, lst):
+    for i in list_of_strings:
+        
