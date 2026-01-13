@@ -134,3 +134,11 @@ add_binary_string("1", "0") # Returns 1
 def find_common_prefix(list_of_strings, lst):
     for i in list_of_strings:
         
+
+
+#### Problem 7: 01/13/26
+"""
+Given an array of numbers sorted in ascending order, return a height-balanced binary search tree using every number from the array.
+Note: height-balanced meaning that the level of any nodes two subtrees should not differ by more than one.
+"""
+### Solution:
